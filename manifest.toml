@@ -33,7 +33,7 @@ ram.runtime = "50M"
 
     [install.path]
     type = "path"
-    default = "/example"
+    default = "/cloudlog"
 
     [install.init_main_permission]
     type = "group"
