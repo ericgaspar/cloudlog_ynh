@@ -35,6 +35,10 @@ ynh_add_nginx_config
 # Use logrotate to manage application logfile(s)
 ynh_use_logrotate
 
+ynh_add_config --template="../conf/moncycleapp.cron" --destination="/etc/cron.d/$app"
+chown root: "/etc/cron.d/$app"
+chmod 644 "/etc/cron.d/$app"
+
 #=================================================
 # APP INITIAL CONFIGURATION
 #=================================================
